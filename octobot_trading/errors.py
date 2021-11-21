@@ -72,3 +72,9 @@ class InvalidOrderState(Exception):
     Raised when an order state is handled on a previously cleared order
     (cleared orders should never be touched)
     """
+
+
+class UnreachableExchange(Exception):
+    """
+    Raised when an exchange cant be reached (likely when it's offline)
+    """
